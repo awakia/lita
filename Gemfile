@@ -4,6 +4,8 @@ gem "dotenv"
 gem "lita"
 gem "lita-slack"
 
+gem "lita-watch", path: "handlers/lita-watch"
+
 # Uncomment to use the HipChat adapter
 # gem "lita-hipchat"
 
