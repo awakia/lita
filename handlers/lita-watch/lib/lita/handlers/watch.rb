@@ -4,7 +4,7 @@ module Lita
       route(/.*/, :log)
 
       def log(response)
-        puts response
+        puts response.matches
       end
 
       Lita.register_handler(self)
