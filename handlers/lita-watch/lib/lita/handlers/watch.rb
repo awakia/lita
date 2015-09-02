@@ -1,7 +1,11 @@
 module Lita
   module Handlers
     class Watch < Handler
-      # insert handler code here
+      route(/.*/, :log)
+
+      def log(response)
+        puts response
+      end
 
       Lita.register_handler(self)
     end
